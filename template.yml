@@ -49,8 +49,8 @@ Globals:
       - x86_64 # arm64 is not supported by dynamodb-encryption-sdk
     Environment:
       Variables:
-        AWS_LAMBDA_LOG_LEVEL: DEBUG
-        POWERTOOLS_LOG_LEVEL: DEBUG
+        AWS_LAMBDA_LOG_LEVEL: INFO
+        POWERTOOLS_LOG_LEVEL: INFO
         POWERTOOLS_LOGGER_SAMPLE_RATE: 0.1
         POWERTOOLS_LOGGER_LOG_EVENT: true
         POWERTOOLS_METRICS_NAMESPACE: PlaidApi
