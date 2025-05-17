@@ -55,6 +55,7 @@ def get_plaid_client() -> plaid_api.PlaidApi:
             "secret": credentials["client_secret"],
         },
     )
+    logger.debug(f"Plaid configuration: {configuration.__dict__}")
     api_client = plaid.ApiClient(configuration)
     client = plaid_api.PlaidApi(api_client)
 
